@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiDuZ | Produtora de Áudio e Trilha Sonora</title>
+    <style>
+        /* Variáveis de cor para um visual premium de estúdio */
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --text-main: #f2f2f2;
+            --text-muted: #888;
+            --accent: #e5b122; /* Dourado para destacar */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            color: var(--accent);
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Estrutura do Grid do Portfólio */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        /* Estilo dos Cards de Vídeo */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .video-placeholder {
+            background-color: #000;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 0.9rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .card-info {
+            padding: 1.5rem;
+        }
+
+        .card-info h3 {
+            margin: 0 0 10px;
+            font-size: 1.3rem;
+            color: var(--text-main);
+        }
+
+        .card-info p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid #333;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RiDuZ</h1>
+        <p>Produção Musical & Sound Design para Audiovisual</p>
+    </header>
+
+    <div class="container">
+        <div class="portfolio-grid">
+            
+            <div class="card">
+                <div class="video-placeholder">[ Incorporar link do Vimeo/YouTube aqui ]</div>
+                <div class="card-info">
+                    <h3>Rescoring: Ação Automotiva</h3>
+                    <p>Baterias intensas e sintetizadores focados em dinâmica e impacto visual para o mercado publicitário.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="video-placeholder">[ Incorporar link do Vimeo/YouTube aqui ]</div>
+                <div class="card-info">
+                    <h3>Textura Cinemática</h3>
+                    <p>Pianos melancólicos e sound design imersivo para criar tensão e guiar a narrativa dramática.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="video-placeholder">[ Incorporar link do Vimeo/YouTube aqui ]</div>
+                <div class="card-info">
+                    <h3>Groove Urbano (Lifestyle)</h3>
+                    <p>Arranjos orgânicos com forte influência de jazz e bossa nova, captados com alta fidelidade e clareza.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 RiDuZ Produções. Porto Alegre, RS.</p>
+    </footer>
+
+</body>
+</html>
